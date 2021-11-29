@@ -1,0 +1,2 @@
+# Industry4.0-Prognostic-Device
+The task was to interface the Vibrator Censor to the Arduino Nano (ESP8266) and get the values  from the censor. The values are received through Bluetooth module interfaced with the Arduino Nano. Then those censor values are passed through the Fast Fourier Transform algorithm which  is called using the numpy package in python. The reason to convert it into FFT is because it converts the signal data into frequency which in-turn can be used to find if there is any defect in the machine.
