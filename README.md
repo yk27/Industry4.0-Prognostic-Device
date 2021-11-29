@@ -13,16 +13,19 @@ The values are updated to the google sheet using the gspread module for python. 
 stored via API calls which is stored under a parameter. This API is in the form of a .json file. 
 Once we get the instance of the sheet via the API parameter call, the values can be read, 
 manipulated and updated to the google sheet.
+
 The values received are used as a parameter for the FFT Conversion. Fast Fourier 
 Transformation is an algorithm which converts a signal from its original domain to a frequency 
 domain. FFT has error when finite precision floating point arithmetic is used, but these errors are 
 mostly small. It rapidly computes by factorizing the DFT matrix into a product of mostly zero 
 factors, thus manages to reduce the time complexity.
+
 Once the values are obtained after FFT Conversion using the numpy module for python using the 
 function numpy.fft.fft(parameter), these values are used to plot a live graph. This is done through 
 the pyqtgraph module available for python. Under this graph the, pink spectrum denotes the 
 signal from its original domain, whereas the blue frequency spectrum denotes the frequency 
 domain which is obtained by FFT Conversion.
+
 A Machine Learning model is trained using sklearn package available in python. Linear 
 Regression algorithm is used to train the model using previous datasets. The dataset is usually 
 divided into two parts. One which is used for training the model and the other one is used for 
