@@ -2,9 +2,7 @@
 The task was to interface the Vibrator Censor to the Arduino Nano (ESP8266) and get the values  from the censor. The values are received through Bluetooth module interfaced with the Arduino Nano. Then those censor values are passed through the Fast Fourier Transform algorithm which  is called using the numpy package in python. The reason to convert it into FFT is because it converts the signal data into frequency which in-turn can be used to find if there is any defect in the machine.
 
 # Architecture Diagram
-![Architecture Diagram](https://user-images.githubusercontent.com/47251253/143852006-575dc757-2005-4d40-8b23-38a57863e3d0.png)
-
-
+![image](https://user-images.githubusercontent.com/47251253/143852203-88327f08-a7c9-4985-93fb-fc607d1c14a5.png)
 
 # Working Principle
 The Arduino ESP8266 board is used to interface the vibration sensor and Bluetooth module. The 
@@ -30,6 +28,3 @@ Regression algorithm is used to train the model using previous datasets. The dat
 divided into two parts. One which is used for training the model and the other one is used for 
 testing the accuracy of the model. Once the model is trained, we would be able to predict the 
 next set of values for a given time interval.
-
-# Result and Inference
-![r i](https://user-images.githubusercontent.com/47251253/143852113-4f79bb05-ac26-4b71-b078-1f94c7660136.png)
